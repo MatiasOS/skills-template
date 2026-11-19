@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "mattpocock-skills@claude-plugins-official": true
+  },
+  "skillOverrides": {
+    "ask-matt": "off",
+    "code-review": "off",
+    "codebase-design": "off",
+    "diagnosing-bugs": "off",
+    "domain-modeling": "off",
+    "grill-me": "off",
+    "grill-with-docs": "off",
+    "grilling": "off",
+    "handoff": "off",
+    "implement": "off",
+    "implement-spec": "off",
+    "improve-codebase-architecture": "off",
+    "pr": "off",
+    "prototype": "off",
+    "research": "off",
+    "retro": "off",
+    "setup-matt-pocock-skills": "off",
+    "tdd": "off",
+    "teach": "off",
+    "to-questionnaire": "off",
+    "to-spec": "off",
+    "to-tickets": "off",
+    "triage": "off",
+    "wait-what": "off",
+    "wayfinder": "off",
+    "wizard": "off",
+    "writing-for-agents": "off",
+    "decision-mapping": "off",
+    "review": "off",
+    "to-issues": "off",
+    "to-prd": "off",
+    "ubiquitous-language": "off"
+  },
+  "permissions": {
+    "deny": [
+      "Skill(mattpocock-skills:ask-matt)",
+      "Skill(mattpocock-skills:code-review)",
+      "Skill(mattpocock-skills:diagnosing-bugs)",
+      "Skill(mattpocock-skills:implement)",
+      "Skill(mattpocock-skills:implement-spec)",
+      "Skill(mattpocock-skills:tdd)",
+      "Skill(ask-matt)",
+      "Skill(code-review)",
+      "Skill(diagnosing-bugs)",
+      "Skill(implement)",
+      "Skill(implement-spec)",
+      "Skill(tdd)",
+      "Skill(decision-mapping)",
+      "Skill(review)",
+      "Skill(to-issues)",
+      "Skill(to-prd)",
+      "Skill(ubiquitous-language)",
+      "Read(./.env)",
+      "Read(./.env.local)",
+      "Read(./.env.*.local)"
+    ]
+  },
+  "env": {
+    "SUPERPOWERS_DISABLE_TELEMETRY": "1"
+  }
+}

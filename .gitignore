@@ -1,15 +1,26 @@
-# Ignore macOS-specific files
+# OS and editors
 .DS_Store
-
-# Ignore IDE and editor files
 .idea/
 .vscode/
 
-# Ignore build and dependency directories
+# Dependencies and build output
 node_modules/
 __pycache__/
 build/
 dist/
 
-# Ignore OSgrep
-.osgrep/
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# Claude Code: personal settings stay local
+.claude/settings.local.json
+
+# Superpowers: design docs, plans and workspaces are local working files.
+# Lasting decisions go to docs/adr/ or the issue. Never `git add -f` these.
+/docs/superpowers/
+/.superpowers/
+
+# Git worktrees, one per implementation issue
+/.worktrees/
